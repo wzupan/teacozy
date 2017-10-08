@@ -6,11 +6,6 @@ body {
   opacity: 0.9;
   text-align: center;
 }
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 /*Header*/
 
@@ -45,3 +40,29 @@ a {
 }
 
 /*Main Content*/
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mission {
+  display: flex;
+  justify-content: center;
+}
+.mission .image-content {
+  align-content: center;
+  justify-content: center;
+  background-image: url(../photos/mission-background.jpg);
+  margin-top: 69px;
+  min-width: 1200px;
+  height: 700px;
+}
+.stripe {
+  flex-direction: column;
+  background-color: black;
+  align-item: center;
+  z-index: 5;
+}
