@@ -5,9 +5,8 @@ html {
   background-color: black;
   opacity: 0.9;
   text-align: center;
-  margin: 0px !important;
+  margin: 0px;
 }
-/*Used !important because I couldn't find any other way around my Chrome browser's automatic, 8px margins*/
 
 /*Header*/
 
