@@ -63,17 +63,6 @@ h2, h3, h4 {
   width: 1200px;
   margin: auto;
 }
-/*
-.content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  top: 69px;
-  text-align: center;
-  width: 100%;
-}*/
 .mission {
   display: flex;
   flex-direction: column;
@@ -89,54 +78,53 @@ h2, h3, h4 {
   margin: auto;
   z-index: 3;
 }
-#tea-month {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.month {
-  display: flex;
+.tea-month {
+  height: 700px;
   width: 1000px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 30px;
+  padding-top: 70px;
+  margin: auto;
+}
+.card {
+  padding: 5px;
 }
 .card img {
-  margin: 0px 15px;
+  margin: 10px;
   height: 200px;
   width: 300px;
+  display: block;
 }
-.locations {
-  display: flex;
-  justify-content: space-around;
+.card span {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+}
+#locations {
   background-image: url(../photos/locations-background.jpg);
-  width: 1200px;
-  align-items: center;
+  padding-top: 70px;
   height: 500px;
 }
-.box {
+#locations .flex-container {
+  width: 1100px;
+  margin: auto;
+}
+.flex-container.locations {
+  padding-top: 5px;
+}
+.location {
   display: flex;
   flex-direction: column;
-  background-color: black;
-  width: 300px;
-  height: 300px;
+  flex-basis: 300px;
   justify-content: center;
-  align-items: center;
-  padding-left: 0 25px;
-  padding: 40px 10px;
-}
-.box h4 {
-  font-weight: normal;
+  background-color: black;
+  opacity: 1;
+  padding: 10px;
+  margin: 5px 20px;
 }
 .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   height: 200px;
 }
 footer {
   padding-left: 20px;
   text-align: left;
-  margin-top: 80px;
-  margin-bottom: 40px;
 }
