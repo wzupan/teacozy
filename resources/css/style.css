@@ -5,6 +5,7 @@ body {
   background-color: black;
   opacity: 0.9;
   text-align: center;
+  margin: 0px;
 }
 
 /*Header*/
@@ -14,6 +15,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background: black;
   position: fixed;
   z-index: 5;
   width: 100%;
@@ -44,25 +46,43 @@ a {
 .content-container {
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  top: 69px;
+  text-align: center;
+  border: 1px solid white;
+  width: 100%;
 }
 .mission {
   display: flex;
-  justify-content: center;
-}
-.mission .image-content {
-  align-content: center;
+  flex-direction: column;
   justify-content: center;
   background-image: url(../photos/mission-background.jpg);
-  margin-top: 69px;
-  min-width: 1200px;
+  width: 1200px;
   height: 700px;
+  border: 1px solid white;
 }
 .stripe {
-  flex-direction: column;
   background-color: black;
-  align-item: center;
-  z-index: 5;
+  z-index: 3;
+}
+#tea-month {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+.month {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  border: 1px solid white;
+}
+.card img {
+  margin: 0px 15px;
+  height: 200px;
+  width: 300px;
+  border: 1px solid white;
 }
