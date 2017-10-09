@@ -5,10 +5,17 @@ html {
   background-color: black;
   opacity: 0.9;
   text-align: center;
-  margin: 0px;
+  margin: 0px !important;
 }
+/*Used !important because I couldn't find any other way around my Chrome browser's automatic, 8px margins*/
 
 /*Header*/
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 header {
   display: flex;
@@ -39,9 +46,24 @@ a {
   color: seashell;
   text-decoration: underline;
 }
+div {
+  display: block;
+}
 
 /*Main Content*/
 
+h2, h3, h4 {
+  margin: 0px;
+  padding: 10px;
+}
+
+.main {
+  padding-top: 69px;
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+}
+/*
 .content-container {
   display: flex;
   flex-direction: column;
@@ -51,17 +73,20 @@ a {
   top: 69px;
   text-align: center;
   width: 100%;
-}
+}*/
 .mission {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   background-image: url(../photos/mission-background.jpg);
   width: 1200px;
   height: 700px;
+  padding-top: 70px;
 }
-.stripe {
+.mission .stripe {
   background-color: black;
+  width: 100%;
+  margin: auto;
   z-index: 3;
 }
 #tea-month {
